@@ -1,0 +1,1 @@
+# Runs the SQL queries and produces team_summary.csv

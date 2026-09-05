@@ -1,0 +1,5 @@
+team_id,team_name,region,target_response_hours,target_resolution_hours
+T01,General Support,UK,4,24
+T02,Technical Support,UK,3,36
+T03,Billing Support,UK,4,30
+T04,Customer Success,UK,6,48
