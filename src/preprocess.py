@@ -75,6 +75,9 @@ valid_team_ids = df_teams["team_id"]
 
 df_tickets.to_csv("data/processed/tickets_clean.csv", index=False)
 df_teams.to_csv("data/processed/teams_clean.csv", index=False)
+df_cleaned_tickets = pd.read_csv("data/processed/tickets_clean.csv")
+print(f" first_response_at: {df_cleaned_tickets["first_response_at"].isna().sum()}")
+print(f" resolved_at: {df_cleaned_tickets["resolved_at"].isna().sum()}")
 
-print(df_teams.head())
+
 

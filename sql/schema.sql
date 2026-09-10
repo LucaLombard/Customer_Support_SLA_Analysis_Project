@@ -12,9 +12,9 @@ CREATE TABLE teams(
 );
 
 CREATE TABLE tickets(
-    ticket_id TEXT PRIMARY KEY
+    ticket_id TEXT PRIMARY KEY,
     created_at TEXT NOT NULL,
-    first_response_at TEXT NOT NULL,
+    first_response_at TEXT,
     resolved_at TEXT,
     team_id TEXT NOT NULL,
     priority TEXT NOT NULL,
