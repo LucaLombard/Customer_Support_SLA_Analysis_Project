@@ -73,7 +73,7 @@ valid_team_ids = df_teams["team_id"]
 # print(f"\n Tickets with invalid team ids: {len(df_tickets[~df_tickets["team_id"].isin(valid_team_ids)])}")
 
 
-df_tickets.to_csv("data/processed/clean_tickets.csv", index=False)
+df_tickets.to_csv("data/processed/tickets_clean.csv", index=False)
 df_teams.to_csv("data/processed/teams_clean.csv", index=False)
 
 print(df_teams.head())
