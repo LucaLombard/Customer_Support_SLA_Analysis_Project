@@ -17,9 +17,9 @@ SELECT
 FROM tickets;
 
 SELECT
-    tickets.ticket_id
-    tickets.status
-    tickets.priority
+    tickets.ticket_id,
+    tickets.status,
+    tickets.priority,
     teams.team_name
 FROM tickets
 JOIN teams
@@ -27,7 +27,7 @@ JOIN teams
 LIMIT 10;
 
 SELECT
-    teams.team_name
+    teams.team_name,
     COUNT(tickets.ticket_id) AS total_tickets,
 
     ROUND(
